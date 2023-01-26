@@ -464,6 +464,53 @@ section{
     margin: .5rem;
 }
 
+.skill .sql-container{
+    height: 5rem;
+    width: 90%;
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    margin-left: 5rem;
+    margin-top: 3rem;
+    color: var(--black);
+}
+.skill .sql-container .name{
+    margin: 1rem 2rem 1rem ;
+}
+.skill .sql-container .loader{
+    height: 1rem;
+    width: 60%;
+    box-shadow: var(--box-shadow-inset);
+    border-radius: 1rem;
+    position: relative;
+}
+.skill .sql-container .sql-loader1{
+    position: absolute;
+    left: 0;
+    background: var(--green);
+    height: 1rem;
+    width: 85%;
+    border-radius: 1rem;
+    animation-name: py-loader1;
+    animation-duration: 3s;
+}
+@keyframes sql-loader1{
+    0%{
+        height: 1rem;
+        width: 20%
+    }
+    100%{
+        height: 1rem;
+        width: 80%;
+    }
+}
+.skill .sql-container .percentage{
+    margin: .5rem;
+}
+
 .projects .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(27rem,1fr));
