@@ -3,12 +3,12 @@
     --green:#27ae60;
     --black:#444;
     --light-color:#222;
-    --bg-color:#e2ddf1;
-    /* --border:.1rem solid rgba(0,0,0,0.2); */
+    --bg-color:#d6cdeb;
+    --border:.1rem solid rgba(0,0,0,0.2);
     --box-shadow:.4rem .4rem 1rem rgb(204, 204, 204),
-                -.4rem -.4rem 1rem rgb(255, 255, 255);
+                -.3rem -.3rem 0.5rem rgb(255, 255, 255);
     --box-shadow-inset:.4rem .4rem 1rem #ccc inset,
-                      -.4rem -.4rem 1rem #fff inset;
+                      -.3rem -.3rem .5rem #fff inset;
 
 }
 
@@ -332,7 +332,7 @@ section{
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    margin: 0 5rem;
+    margin-left: 5rem;
     color: var(--black);
     margin-top: 3rem;
 }
@@ -464,10 +464,93 @@ section{
     margin: .5rem;
 }
 
+.projects .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem,1fr));
+    gap:2rem;
+}
+.projects .box-container .box{
+    padding: 2rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+}
+.projects .box-container .box i{
+    font-size: 5rem;
+    padding-bottom: 3rem;
+    color: #fff;
+}
+.projects .box-container .box h3{
+    font-size: 2rem;
+    padding-bottom: 1rem;
+    color: var(--black);
+}
+.projects .box-container .box p{
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: var(--black);
+}
+.projects .box-container .box::before{
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    height: 100%;
+    width: 100%;
+    background: var(--green);
+    z-index: -1;
+    clip-path: circle(9rem at 5% 0%);
+    transition: .3s linear;
+}
+.projects .box-container .box:hover::before{
+    clip-path: circle(100%);
+    transition: .3s linear;
+}
+.projects .box-container .box:hover > *{
+    color: #fff;
+}
+.contacts{
+    margin-top: 3rem;
+}
+.contacts form{
+    margin: 1rem auto;
+    max-width: 70rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    padding: 2rem;
+}
+.contacts form .box{
+    padding: 1rem 1.5rem;
+    width: 100%;
+    background: none;
+    color: var(--black);
+    font-size: 1.6rem;
+    text-transform: none;
+    margin: .7rem 0;
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+}
+.contacts form textarea{
+    height: 20rem;
+    resize: none;
 
+}
+.contacts form .box:focus{
+    box-shadow: var(--box-shadow-inset);
+}
 
-
-
+.credit{
+    font-size: 2rem;
+    text-align: center;
+    padding:2.5rem 1rem;
+    margin-top: 1rem;
+    border-top: var(--border);
+    color: var(--black);
+}
+.credit span{
+    color: var(--green);
+}
 
 
 
