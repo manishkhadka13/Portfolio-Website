@@ -2,8 +2,8 @@
 :root{
     --green:#27ae60;
     --black:#444;
-    --light-color:#2f3640;
-    --bg-color:#d1f0f0;
+    --light-color:#222;
+    --bg-color:#e2ddf1;
     /* --border:.1rem solid rgba(0,0,0,0.2); */
     --box-shadow:.4rem .4rem 1rem rgb(204, 204, 204),
                 -.4rem -.4rem 1rem rgb(255, 255, 255);
@@ -34,7 +34,7 @@ body{
 }
 body.active{
     --black:#fff;
-    --light-color:#dff9fb;
+    --light-color:#e2ddf1;
     --bg-color:#222;
     --border:.1rem solid rgba(0,0,0,.4);
     --box-shadow:.4rem .4rem 1rem #111,
