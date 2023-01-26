@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="icon" href="/images/logo1.png" type="image/x-icon">
+    <!-- Font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Custom css file link -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header section starts -->
+    <header class="header">
+        <div class="user">
+            <img src="images/1.png" alt="">
+            <h3>Manish Khadka</h3>
+            <p>Computer Engneer</p>
+        </div>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>  
+        </nav>
+    </header>
+    <!-- Header section ends -->
+    <div id="menu-btn" class="fas fa-bars"></div>
+    <!-- theme toggler -->
+    <div id="theme-toggler" class="fas fa-moon"></div>
+    <!-- Home section  -->
+    <section class="home" id="home">
+        <div class="content">
+            <p>Hello, I'm</p>
+            <h3><span class="auto"></span></h3>
+            <p>Welcome to my personal portfolio website.</p>
+            <a href="./Docs/Manish_khadka_resume.pdf" target="_blank" class="btn">Download Resume</a>
+        </div>
+        <div class="share">
+            <a href="https://www.facebook.com/manish.khadka.14/" target="_blank" class="fab fa-facebook-f"></a>
+            <a href="https://twitter.com/IamMagneto13" target="_blank" class="fab fa-twitter"></a>
+            <a href="https://www.instagram.com/the_magneto13/" target="_blank" class="fab fa-instagram"></a>
+            <a href="https://www.linkedin.com/in/manish-khadka-a12640253/" target="_blank" class="fab fa-linkedin"></a>
+            <a href="https://www.github.com/manishkhadka13" target="_blank" class="fab fa-github"></a>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        let typed=new Typed(".auto",{
+            strings:  ["Manish Khadka"],
+            typeSpeed: 150,
+            backSpeed: 100,
+            loop: true
+        })
+    </script>
+    </section>
+    <!-- Home section ends -->
+
+    <!-- About section starts -->
+    <section class="about" id="about">
+        <h1 class="heading"> <span>about</span> me</h1>
+        <div class="row">
+            <div class="box-container">
+                <div class="box">
+                    <h3>Hard-Working</h3>
+                </div>
+                <div class="box">
+                    <h3>Goal-Driven</h3>
+                </div>
+                <div class="box">
+                    <h3>Team-Player</h3>
+                </div>
+                <div class="box">
+                    <h3>Quick-Learner</h3>
+                </div>
+            </div>
+            <div class="content">
+                <h3>Hi, I'm <span>Manish Khadka</span></h3>
+                <p>I am  computer engineering student with a passion for technology and its ability to improve people's lives. With a strong background in mathematics and an aptitude for problem-solving, I have developed a keen interest in software development, machine learning, and computer architecture. My goal is to use my skills to design and develop innovative technology that addresses real-world problems.</p>
+            </div>
+        </div>
+        <div class="table">
+            <div class="left">
+                <h2 style="text-decoration: underline;">personal Details:</h2>
+                <table border="1">
+                    <tr>
+                        <td>Name:</td>
+                        <td>Manish Khadka</td>
+                    </tr>
+                    <tr>
+                        <td>Birthday:</td>
+                        <td>June 11</td>
+                    </tr>
+                    <tr>
+                        <td>Address:</td>
+                        <td>Kirat Chowk,Jhapa</td>
+                    </tr>
+                    <tr>
+                        <td>Email:</td>
+                        <td>mandy.khadka10@gmail.com</td>
+                    </tr>   
+                </table>
+            </div>
+            <div class="right">
+                <h2 style="text-decoration: underline;">Education:</h2>
+                <table border="1">
+                    <tr>
+                        <td>Undergraduate:</td>
+                        <td>B.E. Computer Engineering,Thapathali Campus(2018-2022)</td>
+                    </tr>
+                    <tr>
+                        <td>Higher Secondary:</td>
+                        <td>Science, SOS Hermann Gmeiner School(2015-2017)</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+    <!-- About section ends -->
+    <!-- Skills section start -->
+    <section class="skill" id="skills">
+        <h1 class="heading"><span>sk</span>ills</h1>
+        <div class="content">
+            <h3>I can demonstrate the followings skills</h3>
+        </div>
+        <div class="container">
+            <div class="py-container">
+                <div class="name"><h2>Python</h2></div>
+                <div class="loader">
+                    <div class="py-loader1"></div>
+                </div>
+                <div class="percentage"><h2>80%</h2></div>
+            </div>
+            <div class="html-container">
+                <div class="name"><h2>HTML</h2></div>
+                <div class="loader">
+                    <div class="html-loader1"></div>
+                </div>
+                <div class="percentage"><h2>90%</h2></div>
+            </div>
+            <div class="css-container">
+                <div class="name"><h2>CSS</h2></div>
+                <div class="loader">
+                    <div class="css-loader1"></div>
+                </div>
+                <div class="percentage"><h2>75%</h2></div>
+            </div>
+            <div class="js-container">
+                <div class="name"><h2>JavaScript</h2></div>
+                <div class="loader">
+                    <div class="js-loader1"></div>
+                </div>
+                <div class="percentage"><h2>70%</h2></div>
+            </div>
+        </div>
+    </section>
+    <!-- Skills section ends -->
+    <!-- Projects section starts -->
+    <section class="projects" id="projects"></section>
+
+
+
+
+
+
+
+
+
+    <!-- custom js file link -->
+    <script src="js/script.js"></script>
+</body>
+</html>
