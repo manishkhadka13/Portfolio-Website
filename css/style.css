@@ -2,8 +2,8 @@
 :root{
     --green:#27ae60;
     --black:#444;
-    --light-color:#222;
-    --bg-color:#d6cdeb;
+    --light-color:#28282B;
+    --bg-color:#D5EBDA;
     --border:.1rem solid rgba(0,0,0,0.2);
     --box-shadow:.4rem .4rem 1rem rgb(204, 204, 204),
                 -.3rem -.3rem 0.5rem rgb(255, 255, 255);
@@ -34,13 +34,13 @@ body{
 }
 body.active{
     --black:#fff;
-    --light-color:#e2ddf1;
-    --bg-color:#222;
+    --light-color:#D5EBDA;
+    --bg-color:#28282B;
     --border:.1rem solid rgba(0,0,0,.4);
     --box-shadow:.4rem .4rem 1rem #111,
-                -.4rem -.4rem 1rem #333;
+                -.3rem -.3rem 0.5rem #333;
     --box-shadow-inset:.4rem .4rem 1rem #111 inset,
-                      -.4rem -.4rem 1rem #111 inset;
+                      -.3rem -.3rem .5rem #111 inset;
 
 }
 section{
@@ -48,7 +48,7 @@ section{
     padding: 2rem;
 }
 .btn{
-    margin-top: 3rem;
+    margin-top: 3.5rem;
     display: inline-block;
     padding: 1rem 3.5rem;
     border-radius: .5rem;
@@ -83,6 +83,7 @@ section{
     height:100%;
     padding: 2rem; 
     text-align:center;
+    border-color: var(--light-color);
 }
 
 .header .user img{
@@ -178,8 +179,6 @@ section{
 .home .share{
     position: relative;
     top: 10rem;
-    /* border-radius: .5rem; */
-    /* box-shadow: var(--box-shadow); */
     padding: 1rem;
 }
 .home .share a{
@@ -187,7 +186,8 @@ section{
     width: 5rem;
     line-height: 5rem;
     box-shadow: var(--box-shadow);
-    margin: .5rem;
+    margin: 2rem;
+    border-radius: 1rem;
     font-size: 2rem;
     color: var(--black);
 }
@@ -226,6 +226,7 @@ section{
     padding: .5rem 0;
 
 }
+
 .about .row .content{
     flex:1 1 40rem;
 }
@@ -250,6 +251,8 @@ section{
     width: 50%;
     height: 100%;
     color: var(--black);
+    padding: 1rem;
+    /* box-shadow: var(--box-shadow); */
 }
 .right{
     font-size: 1.5rem;
@@ -257,11 +260,13 @@ section{
     width: 50%;
     height: 100%;
     color: var(--black);
+    /* box-shadow: var(--box-shadow); */
 }
 .table{
     margin-top: 3rem;
     display: flex;
     justify-content: space-between;
+    box-shadow: var(--box-shadow);
 }
 .skill .container{
     display: grid;
@@ -562,7 +567,7 @@ section{
 }
 .contacts form{
     margin: 1rem auto;
-    max-width: 70rem;
+    max-width: 80rem;
     border-radius: .5rem;
     box-shadow: var(--box-shadow);
     padding: 2rem;
@@ -594,6 +599,7 @@ section{
     margin-top: 1rem;
     border-top: var(--border);
     color: var(--black);
+    border-color: var(--light-color);
 }
 .credit span{
     color: var(--green);
@@ -641,4 +647,15 @@ section{
         width: 100%;
         border-right: 0;
     }
+    .table{
+        flex-direction: column;
+    }
 }
+@media (max-width:650px){
+    .table{
+        flex-direction: column;
+    }
+}
+    
+}
+
