@@ -18,7 +18,7 @@
     box-sizing: border-box;
     outline: none; border: none;
     text-decoration: none;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     transition: .2s linear;
 }
 
@@ -163,6 +163,7 @@ section{
     align-items: center;
     justify-content: center;
     text-align: center;
+    min-height: 100vh;
 }
 .home .content h3{
     font-size: 7rem;
@@ -194,7 +195,12 @@ section{
     box-shadow: var(--box-shadow-inset);
     color: var(--green);
 }
-
+.about{
+    margin-bottom: 4rem;
+}
+.skill{
+    margin-bottom: 1rem;
+}
 .about .row{
     display: flex;
     align-items: center;
