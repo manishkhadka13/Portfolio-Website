@@ -647,8 +647,14 @@ section{
         width: 100%;
         border-right: 0;
     }
+    .skill .container{
+        margin-right: 5rem;
+    }
     .table{
         flex-direction: column;
+    }
+    .right{
+        padding: 1rem;
     }
 }
 @media (max-width:650px){
