@@ -595,7 +595,7 @@ section{
 }
 .contacts form .box:focus{
     box-shadow: var(--box-shadow-inset);
-}
+ } 
 
 .credit{
     font-size: 2rem;
@@ -609,7 +609,11 @@ section{
 .credit span{
     color: var(--green);
 }
-
+.date{
+    font-size: 1.7rem;
+    margin-top: 2rem;
+    color: var(--black);
+}
 
 
 

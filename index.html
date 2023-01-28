@@ -26,6 +26,10 @@
             <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>  
         </nav>
+        <div class="date">
+            <p id="date"></p>
+            <p id="time"></p>
+        </div>
     </header>
     <!-- Header section ends -->
     <div id="menu-btn" class="fas fa-bars"></div>
@@ -195,17 +199,17 @@
     <!-- Contact section starts -->
     <section class="contacts" id="contact">
         <h1 class="heading"><span>contact</span> me</h1>
-        <form action="">
-            <input type="text" placeholder="Your Name" class="box">
-            <input type="email" placeholder="Your Email" class="box">
-            <input type="text" placeholder="Subject" class="box">
-            <textarea name="" class="box" placeholder="Your Message" id="" cols="30" rows="7"  ></textarea>
+        <form action="" onsubmit="return runSubmit()" class="contact-form">
+            <input type="text" placeholder="Your Name" id= "name" class="box" required>
+            <input type="email" placeholder="Your Email" id="email" class="box" required>
+            <input type="text" placeholder="Subject" id="subject" class="box" required>
+            <textarea name="" class="box" placeholder="Your Message" id="message" cols="30" rows="7"  ></textarea>
             <input type="submit" value="Send" class="btn">
         </form>
     </section>
     <!-- Contact section ends -->
     <!-- Footer section starts -->
-    <div class="credit">created by <span> Manish khadka</span> | all rights reserved |</div>
+    <div class="credit">Created by <span> Manish khadka</span> | All rights reserved |</div>
 
 
 
