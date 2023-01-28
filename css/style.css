@@ -44,7 +44,6 @@ body.active{
 
 }
 section{
-    min-height: 100vh;
     padding: 2rem;
 }
 .btn{
@@ -615,10 +614,6 @@ section{
 
 
 
-
-
-
-
 /* media queries */
 @media (max-width:991px){
     html{
@@ -648,7 +643,7 @@ section{
         border-right: 0;
     }
     .skill .container{
-        margin-right: 5rem;
+        margin-right: 8rem;
     }
     .table{
         flex-direction: column;
@@ -656,6 +651,7 @@ section{
     .right{
         padding: 1rem;
     }
+
 }
 @media (max-width:650px){
     .table{
@@ -663,5 +659,5 @@ section{
     }
 }
     
-}
+
 
