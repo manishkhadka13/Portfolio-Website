@@ -42,27 +42,25 @@ function runSubmit() {
 
   // send request to localhost:8000/hello
   option = {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({
-      name: nameF,
-      email: emailF,
-      subject: subjectF,
-      message: messageF,
-    }),
+      method: 'POST',
+      headers: {
+          'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+          name: nameF,
+          email: emailF,
+          subject: subjectF,
+          message: messageF,
+          receiver:"mandy.khadka10@gmail.com"
+      })
   };
 
-  url = "http://localhost:8000/mail";
+
+  url = 'https://api.ashminbhattarai.com.np/mail';
 
   fetch(url, option)
-    .then((response) => alert("Message sent successfully!"))
-    .catch((json) =>
-      alert(
-        "Could not send the message. Please send email at visit@ashminbhattarai.com.np."
-      )
-    );
+  .then((response) => alert("Message sent successfully!"))
+  .catch((json) => alert("Could not send the message. Please mail me at:mandy.khadka10@gmail.com"));
 
   // // clear the input field
   document.querySelector("#name").value = "";
